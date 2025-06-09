@@ -8,20 +8,51 @@ body {
 
 .mainContainer{
     display: grid;
+    gap: 20px;
 
 }
 
 
 .bookCard{
-    height: 300px;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 20px;
+    height: 200px;
     width: 300px;
-    border: 1px solid black;
-    font-family: Roboto, sans-serif;
-    font-weight: bold;
-    font-size: 20px;
-    background-color: aliceblue;
-    border-radius: 10%;
+    margin-left: 20px;
+    border: 1px solid #e5acffb2;
+    justify-content: center;
+    border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.144);
 
+}
+
+
+
+.bookBtn{
+    height: 50px;
+    width: 150px;
+    font-family: Roboto, sans-serif;
+    background-color: rgb(62, 165, 255);
+    border-radius: 10px;
+}
+
+
+.cardTitle{
+    width: 100%;
+    border: 1px solid blue;
+    font-family: Roboto, sans-serif;
+    font-weight: bold;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+
+
+.cardcontent{
+    width: 100%;
+    border: 1px solid red;
+    font-family: Roboto, sans-serif;
+    font-size: 14px
 
 }
