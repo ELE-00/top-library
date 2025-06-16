@@ -3,56 +3,91 @@
 body {
     margin: 0;
     padding: 0;
+    background-color: rgb(243, 243, 243);
+    font-family: Roboto, sans-serif;
 
-}
-
-.mainContainer{
-    display: grid;
-    gap: 20px;
-
-}
-
-
-.bookCard{
+/*HEADER SECTION*/
+.headerSection{
     display: grid;
     grid-template-rows: 1fr 1fr 1fr;
-    gap: 20px;
-    height: 200px;
-    width: 300px;
-    margin-left: 20px;
-    border: 1px solid #e5acffb2;
     justify-content: center;
-    border-radius: 10px;
+    align-items: center;
+    height: 200px;
+    background-color: rgb(255, 255, 255);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.144);
-
+    place-items: center
 }
 
+.title{
+    font-weight: bold;
+    font-size: 40px;
+    margin-top: 10px;
+}
+
+.libSummary{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;    
+}
 
 
 .bookBtn{
     height: 50px;
     width: 150px;
-    font-family: Roboto, sans-serif;
-    background-color: rgb(62, 165, 255);
-    border-radius: 10px;
+    background: linear-gradient(to bottom, rgb(255, 255, 255), rgb(255, 196, 216));
+    border-radius: 5px;
+    border: 1px solid rgb(255, 196, 216);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.144);
 }
 
 
+
+/*CONTENT SECTION */
+.mainContainer{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    justify-content: center;
+}
+
+.contentSection{
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+}
+
+
+.bookCard{
+    display: grid;
+    grid-template-rows: auto auto auto auto auto;
+    height: 250px;
+    width: 400px;
+    margin-top: 20px;
+    border: 1px solid #e5acffb2;
+    place-items: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.144);
+
+}
 .cardTitle{
-    width: 100%;
-    border: 1px solid blue;
-    font-family: Roboto, sans-serif;
+    width: 70%;
     font-weight: bold;
-    font-size: 14px;
-    margin-top: 10px;
+    font-size: 18px;
+    padding: 0;
 }
 
 
 
 .cardcontent{
-    width: 100%;
-    border: 1px solid red;
-    font-family: Roboto, sans-serif;
-    font-size: 14px
+    width: 70%;
+    font-size: 16px;
+    padding: 0;
 
+}
+
+svg{
+    height: 20px;
+    width: 20px;
+    justify-self: end;
+    margin-right: 5px;
+    fill: rgb(147, 145, 148);
 }
